@@ -31,7 +31,8 @@ public class ClockAnimator : MonoBehaviour {
 			minutes.localRotation = Quaternion.Euler(0f, 0f, time.Minute * -minutesToDegrees);
 			seconds.localRotation = Quaternion.Euler(0f, 0f, time.Second * -secondsToDegrees);
 			
-			// just adding a comment to test a commit
+			// just adding a comment to test a commit 
+			// and another one
 		}
 	}
 }
