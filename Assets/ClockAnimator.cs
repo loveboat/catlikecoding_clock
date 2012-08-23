@@ -17,6 +17,9 @@ public class ClockAnimator : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		DateTime time = DateTime.Now;
+		DateTime time = DateTime.Now;		
+		hours.localRotation = Quaternion.Euler(0f, 0f, time.Hour * -hoursToDegrees);
+		minutes.localRotation = Quaternion.Euler(0f, 0f, time.Minute * -minutesToDegrees);
+		seconds.localRotation = Quaternion.Euler(0f, 0f, time.Second * -secondsToDegrees);
 	}
 }
