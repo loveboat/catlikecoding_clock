@@ -1,8 +1,15 @@
 using UnityEngine;
-using System.Collections;
+using System;
 
 public class ClockAnimator : MonoBehaviour {
-
+	
+	private const float
+		hoursToDegrees = 360f / 12f,
+		minutesToDegrees = 360f / 60f,
+		secondsToDegrees = 360f / 60f;
+	
+	public Transform hours, minutes, seconds;
+	
 	// Use this for initialization
 	void Start () {
 	
@@ -10,6 +17,6 @@ public class ClockAnimator : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+		DateTime time = DateTime.Now;
 	}
 }
